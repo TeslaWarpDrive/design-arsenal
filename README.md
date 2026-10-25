@@ -1,0 +1,10 @@
+# Design Arsenal
+
+27 design tools, UI kits, component libraries, and inspiration sources curated from my X bookmarks, in one searchable page with the Aurora theme.
+
+**Live page:** https://teslawarpdrive.github.io/design-arsenal/
+
+![Design Arsenal desktop](screenshots/design-arsenal-desktop-hero.png)
+
+- `index.html`: the page (single self-contained file)
+- `agent-handoff-design-sources.md`: the same list formatted to hand to a coding agent
