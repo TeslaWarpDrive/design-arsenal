@@ -1,22 +1,19 @@
-# Design tools and sources and inspiration for you to focus on: [PROJECT]
+# Design sources
 
-## Brief (from Bradley)
+I went through design posts on X, kept the ones worth using, and opened each site to check the license and pricing before adding it. Updated 9 Nov 2026.
 
-> Here's a list of design tools and sources and inspiration for you to focus on for **[PROJECT]**.
+This file is the same list as the page. 56 resources.
 
-Bradley saved these from X. Treat them as the **default source material** for this project:
+## How I use the list
 
-1. **Use them, don't just cite them.** When you pick a component library, animation kit, shader/background, font or color approach, choose from this list first. Look elsewhere only when nothing here fits, and say why.
-2. **Directly usable** items (`web_ready: true`) come with an install/usage hint. Use it as given, and check the license line before you ship.
-3. **Reference-only** items are galleries. Browse them for layout, footer, CTA, motion and icon ideas, then build your own version. Don't copy assets.
-4. **Start with the top picks (★).** For a web page, a strong default stack is: design-taste + ai-design-skills (direction and process) → better-design tokens or ui-layouts blocks (structure) → paper-shaders or canvas-ui (one hero effect) → motion-primitives / trickle-ui-kit (motion and text reveals) → land-book, footer.design, cta.gallery, 60fps, motionin.design (inspiration). Hallmark and the official GSAP skills, added 9 Nov 2026, are the new top picks when a page needs a harder taste check or scroll-driven motion.
-5. **Bradley's taste:** anything a person will look at should be striking and polished, never bland. Read `bradley-design-taste.md` in this folder first.
-6. **No purchases.** Several sources have paid tiers (motionin.design, Backgrounds Supply, Grainient Pro, Wonderlist, Hyperiux Pro). Use only free or open-source parts unless Bradley approves a purchase. The 9 Nov additions with a paid tier are Shaders Pro, React Bits Pro, and Haikei Pro (marked coming soon). Leave those tiers alone.
-7. Honor `prefers-reduced-motion` and keep text contrast at WCAG AA or better over shaders and gradients.
+1. **Use them.** When a page needs a component library, an animation kit, a shader, a background, a font, or a color approach, start here. Look elsewhere only when nothing here fits.
+2. **Directly usable** items come with an install line. Check the license before shipping.
+3. **Galleries** are for looking. Use them for layout, footer, call to action, motion, and icon ideas, then build your own. Don't copy their assets.
+4. **Start with the top picks.** For a web page, a strong set is design-taste and AI Design Skills for direction, better-design tokens or UI Layouts for structure, Paper Shaders or Canvas UI for one hero effect, Motion Primitives or Trickle for motion and text, then Land-book, Footer.design, CTA Gallery, 60fps, and Motionin for ideas. Hallmark and the official GSAP skills are the top picks when a page needs a harder taste check or scroll-driven motion.
+5. **Look.** Anything a person will look at should be striking and polished, never bland. Honor reduced motion, and keep text easy to read over shaders and gradients.
+6. **No purchases.** Several sources have paid tiers (Motionin, Backgrounds Supply, Grainient Pro, Wonderlist, Hyperiux Pro). Use only the free or open-source parts. Shaders Pro, React Bits Pro, and Haikei Pro (marked coming soon) are paid. Leave those tiers alone.
 
-Machine-readable copy: `agent-handoff-design-sources.json` (same data). Source: 34 bookmarks scanned on 25 Oct 2026, 27 resources kept from that scan. On 9 Nov 2026, 29 more were added after each page was checked. 56 resources are in this file.
-
-8. **Left out of the 9 Nov 2026 pass on purpose.** Coolors, Inter, and the broad directories (SiteInspire, One Page Love, Saaspo, WebInspoo, Landingfolio, Httpster). Scrolltide and the main Refero library, because most of each is paid. SaaS Interface ($39 once), SaaSFrame, and Page Flows. Shader Gradient, because the homepage sells a Framer plugin and the repo had no root LICENSE file. Anthropic's frontend-design skill and Emil Kowalski's skills, because Design Taste, Motion Primitives, and the new GSAP skills already cover that job.
+**Left out on purpose.** Coolors, Inter, and the broad directories (SiteInspire, One Page Love, Saaspo, WebInspoo, Landingfolio, Httpster). Scrolltide and the main Refero library, because most of each is paid. SaaS Interface ($39 once), SaaSFrame, and Page Flows. Shader Gradient, because the homepage sells a Framer plugin and the repo had no root LICENSE file. Other skills that repeat Design Taste, Motion Primitives, and the GSAP skills.
 
 ## Sources
 
@@ -33,7 +30,7 @@ Machine-readable copy: `agent-handoff-design-sources.json` (same data). Source: 
 - license: MIT
 - stack: Markdown skill files (agent-agnostic)
 - source post: https://x.com/elayadesigns/status/2114049200749175174
-- note: StreetPi already used it on 2026-10-25 to make 4 layout concepts. Bradley picked 'Control center' as the app's real Home.
+- note: 
 
 #### Superdesign
 - name: Superdesign
@@ -46,7 +43,7 @@ Machine-readable copy: `agent-handoff-design-sources.json` (same data). Source: 
 - license: AGPL-3.0 plus some files under a commercial 'Enterprise' license (Super Design License)
 - stack: TypeScript, VS Code/Cursor extension
 - source post: https://x.com/RoundtableSpace/status/2110255627704455591
-- note: Earlier StreetPi research (2026-10-18) found the original repo marked no longer maintained, with the product moved to superdesign.dev. Avoid copying its code into a page because of the AGPL license.
+- note: The original repo is marked no longer maintained, and the product moved to superdesign.dev. Avoid copying its code into a page because of the AGPL license.
 
 #### Better Design ★ top pick
 - name: Better Design
@@ -59,7 +56,7 @@ Machine-readable copy: `agent-handoff-design-sources.json` (same data). Source: 
 - license: MIT
 - stack: TypeScript, shadcn/ui, Tailwind, MCP
 - source post: https://x.com/RoundtableSpace/status/2110255627704455591
-- note: StreetPi's colors-v2 work borrowed its 'Midnight Glass' / 'Glassmorphic Dark' token layering.
+- note: 'Midnight Glass' and 'Glassmorphic Dark' are the token layers worth borrowing.
 
 #### Design Taste ★ top pick
 - name: Design Taste
@@ -72,7 +69,7 @@ Machine-readable copy: `agent-handoff-design-sources.json` (same data). Source: 
 - license: MIT
 - stack: JavaScript/CSS demos; skills are markdown
 - source post: https://x.com/RoundtableSpace/status/2110255627704455591
-- note: StreetPi used its taste-color skill (60-30-10, OKLCH ramps, WCAG math) as the color review checklist.
+- note: The taste-color skill (60-30-10, OKLCH ramps, WCAG math) is a color review checklist.
 
 #### Hallmark ★ top pick
 - name: Hallmark
@@ -191,7 +188,7 @@ Machine-readable copy: `agent-handoff-design-sources.json` (same data). Source: 
 - license: Apache-2.0
 - stack: TypeScript, WebGL; React wrapper + vanilla package
 - source post: https://x.com/RoundtableSpace/status/2110255627704455591
-- note: StreetPi's loved Aurora palette uses this mesh-gradient recipe for its aura.
+- note: This mesh-gradient recipe is what the aurora orb on this page uses.
 
 #### UI Layouts ★ top pick
 - name: UI Layouts
@@ -217,7 +214,7 @@ Machine-readable copy: `agent-handoff-design-sources.json` (same data). Source: 
 - license: Repo MIT; GitHub description says the free effects are MPL 2.0; Pro effects are paid
 - stack: TypeScript, Next.js
 - source post: https://x.com/RoundtableSpace/status/2110255627704455591
-- note: The post's link (github.com/Hyperiux-Immersive/Hyperiux) returns 404. This is the live repo found by search; it's very likely the same project.
+- note: The post's link (github.com/Hyperiux-Immersive/Hyperiux) returns 404. This is the live repo, and it looks like the same project.
 
 #### Motion Primitives ★ top pick
 - name: Motion Primitives
@@ -433,7 +430,7 @@ Machine-readable copy: `agent-handoff-design-sources.json` (same data). Source: 
 - license: Viewing only (no reuse license)
 - stack: Website
 - source post: https://x.com/neropursue/status/2113878128061792423
-- note: StreetPi used it as its motion reference.
+- note: A strong motion reference.
 
 #### Iconly
 - name: Iconly
@@ -471,7 +468,7 @@ Machine-readable copy: `agent-handoff-design-sources.json` (same data). Source: 
 - license: Viewing only
 - stack: Website
 - source post: https://fountn.design/resource/404s-gallery-of-error-404-page-designs/
-- note: Free to browse. No Indie Hackers thread in the 9 Nov search named the domain.
+- note: Free to browse.
 
 #### Navbar Gallery
 - name: Navbar Gallery
@@ -497,7 +494,7 @@ Machine-readable copy: `agent-handoff-design-sources.json` (same data). Source: 
 - license: Viewing only
 - stack: Website
 - source post: https://pricingpages.design
-- note: The homepage is the gallery. The 9 Nov search did not find a Reddit or Indie Hackers thread that named it.
+- note: The homepage is the gallery.
 
 #### Minimal Gallery
 - name: Minimal Gallery
@@ -564,7 +561,7 @@ Machine-readable copy: `agent-handoff-design-sources.json` (same data). Source: 
 - license: Paid plans cover commercial/client work; free sections are marked Free
 - stack: Prompt + spec files (GSAP / rAF / WebGL)
 - source post: https://x.com/neropursue/status/2113878128061792423
-- note: Don't buy anything without Bradley's approval.
+- note: Paid tiers stay off this list.
 
 #### Wonderlist
 - name: Wonderlist
@@ -615,7 +612,7 @@ Machine-readable copy: `agent-handoff-design-sources.json` (same data). Source: 
 - license: Paid commercial license; freebies available
 - stack: Image/video files
 - source post: https://x.com/neropursue/status/2113878128061792423
-- note: Don't buy anything without Bradley's approval.
+- note: Paid tiers stay off this list.
 
 #### Grainient ★ top pick
 - name: Grainient
@@ -628,7 +625,7 @@ Machine-readable copy: `agent-handoff-design-sources.json` (same data). Source: 
 - license: Freebies allowed for personal and commercial projects (no redistribution); Pro is paid
 - stack: Image/video assets + web shader tool
 - source post: https://x.com/neropursue/status/2113878128061792423
-- note: StreetPi's Aurora palette uses a Grainient-style grain overlay.
+- note: The orb on this page uses a grain overlay in this style.
 
 #### fffuel
 - name: fffuel
@@ -732,7 +729,7 @@ Machine-readable copy: `agent-handoff-design-sources.json` (same data). Source: 
 - license: AGPL-3.0
 - stack: Python; desktop app (CUDA/MLX)
 - source post: https://x.com/liambraus/status/2103825720807993573
-- note: The bookmarked post (Spanish) didn't link the repo. The author's own first reply did: https://x.com/liambraus/status/2103825725438505434
+- note: The original post (Spanish) didn't link the repo. The author's own first reply did: https://x.com/liambraus/status/2103825725438505434
 
 ### Community
 
