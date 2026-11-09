@@ -9,12 +9,14 @@ Bradley saved these from X. Treat them as the **default source material** for th
 1. **Use them, don't just cite them.** When you pick a component library, animation kit, shader/background, font or color approach, choose from this list first. Look elsewhere only when nothing here fits, and say why.
 2. **Directly usable** items (`web_ready: true`) come with an install/usage hint. Use it as given, and check the license line before you ship.
 3. **Reference-only** items are galleries. Browse them for layout, footer, CTA, motion and icon ideas, then build your own version. Don't copy assets.
-4. **Start with the top picks (★).** For a web page, a strong default stack is: design-taste + ai-design-skills (direction and process) → better-design tokens or ui-layouts blocks (structure) → paper-shaders or canvas-ui (one hero effect) → motion-primitives / trickle-ui-kit (motion and text reveals) → land-book, footer.design, cta.gallery, 60fps, motionin.design (inspiration).
+4. **Start with the top picks (★).** For a web page, a strong default stack is: design-taste + ai-design-skills (direction and process) → better-design tokens or ui-layouts blocks (structure) → paper-shaders or canvas-ui (one hero effect) → motion-primitives / trickle-ui-kit (motion and text reveals) → land-book, footer.design, cta.gallery, 60fps, motionin.design (inspiration). Hallmark and the official GSAP skills, added 9 Nov 2026, are the new top picks when a page needs a harder taste check or scroll-driven motion.
 5. **Bradley's taste:** anything a person will look at should be striking and polished, never bland. Read `bradley-design-taste.md` in this folder first.
-6. **No purchases.** Several sources have paid tiers (motionin.design, Backgrounds Supply, Grainient Pro, Wonderlist, Hyperiux Pro). Use only free or open-source parts unless Bradley approves a purchase.
+6. **No purchases.** Several sources have paid tiers (motionin.design, Backgrounds Supply, Grainient Pro, Wonderlist, Hyperiux Pro). Use only free or open-source parts unless Bradley approves a purchase. The 9 Nov additions with a paid tier are Shaders Pro, React Bits Pro, and Haikei Pro (marked coming soon). Leave those tiers alone.
 7. Honor `prefers-reduced-motion` and keep text contrast at WCAG AA or better over shaders and gradients.
 
-Machine-readable copy: `agent-handoff-design-sources.json` (same data). Source: 34 bookmarks scanned, 27 resources kept.
+Machine-readable copy: `agent-handoff-design-sources.json` (same data). Source: 34 bookmarks scanned on 25 Oct 2026, 27 resources kept from that scan. On 9 Nov 2026, 29 more were added after each page was checked. 56 resources are in this file.
+
+8. **Left out of the 9 Nov 2026 pass on purpose.** Coolors, Inter, and the broad directories (SiteInspire, One Page Love, Saaspo, WebInspoo, Landingfolio, Httpster). Scrolltide and the main Refero library, because most of each is paid. SaaS Interface ($39 once), SaaSFrame, and Page Flows. Shader Gradient, because the homepage sells a Framer plugin and the repo had no root LICENSE file. Anthropic's frontend-design skill and Emil Kowalski's skills, because Design Taste, Motion Primitives, and the new GSAP skills already cover that job.
 
 ## Sources
 
@@ -71,6 +73,97 @@ Machine-readable copy: `agent-handoff-design-sources.json` (same data). Source: 
 - stack: JavaScript/CSS demos; skills are markdown
 - source post: https://x.com/RoundtableSpace/status/2110255627704455591
 - note: StreetPi used its taste-color skill (60-30-10, OKLCH ramps, WCAG math) as the color review checklist.
+
+#### Hallmark ★ top pick
+- name: Hallmark
+- url: https://github.com/Nutlope/hallmark
+- category: Agent design skills
+- what it is: Design skill that deals a theme from a catalog, then lints the built page in a browser for machine-made tells: eyebrow labels, a single colored word in a headline, an empty hero, a sign-up on every page.
+- when to use it: Before a new page, when the risk is a generic generated layout.
+- directly usable for a web page: yes (Agent skill (process/rules))
+- install / usage: npx skills add nutlope/hallmark
+- license: MIT
+- stack: Markdown skill; Node 18+; optional Puppeteer for the browser lint
+- source post: https://x.com/Y0urDumble/status/2119793194435027220
+- note: Browser screenshots also need Chrome and puppeteer-core. Static checks still run without them.
+
+#### GSAP skills ★ top pick
+- name: GSAP skills
+- url: https://github.com/greensock/gsap-skills
+- category: Agent design skills
+- what it is: Official agent skills for GSAP: core tweens, easing, timelines, ScrollTrigger, and React, Vue, and Svelte usage.
+- when to use it: Any scroll-linked or timeline animation, before the agent invents a GSAP API.
+- directly usable for a web page: yes (Agent skill (process/rules))
+- install / usage: npx skills add https://github.com/greensock/gsap-skills
+- license: MIT
+- stack: Agent Skills; GSAP
+- source post: https://x.com/Y0urDumble/status/2119793194435027220
+- note: This is the skill, not the GSAP runtime. Install GSAP itself when the page needs it.
+
+#### Impeccable
+- name: Impeccable
+- url: https://github.com/pbakaus/impeccable
+- category: Agent design skills
+- what it is: Installable design-quality skill. It sets a project direction, then checks the page against that direction.
+- when to use it: When a page needs a written quality bar the agent reloads on later edits.
+- directly usable for a web page: yes (Agent skill (process/rules))
+- install / usage: npx impeccable install
+- license: Apache-2.0
+- stack: Markdown skill
+- source post: https://x.com/Y0urDumble/status/2119793194435027220
+- note: Reload the editor after install, then run the init command the installer prints.
+
+#### Taste Skill (Leonxlnx)
+- name: Taste Skill (Leonxlnx)
+- url: https://github.com/Leonxlnx/taste-skill
+- category: Agent design skills
+- what it is: A separate taste skill from Design Taste. The frontend skill is design-taste-frontend. Leonxlnx asked for credit under Elaya's design-skills post.
+- when to use it: When you want a second taste pass that is not the madebymustafa Design Taste repo.
+- directly usable for a web page: yes (Agent skill (process/rules))
+- install / usage: npx skills add https://github.com/Leonxlnx/taste-skill --skill design-taste-frontend
+- license: MIT
+- stack: Markdown skill
+- source post: https://x.com/LexnLin/status/2114150089211904417
+- note: Do not confuse this repo with github.com/madebymustafa/design-taste, which is already in the catalog.
+
+#### GradientDeck
+- name: GradientDeck
+- url: https://github.com/VenoM9078/gradientdeck-skill
+- category: Agent design skills
+- what it is: Skill that writes a page plan first: what the visitor came to do, type, color, photos, and one memorable touch, saved under .gradientdeck before code.
+- when to use it: Before the agent starts a page from a blank brief.
+- directly usable for a web page: yes (Agent skill (process/rules))
+- install / usage: npx gradientdeck install
+- license: MIT. The README says free and MIT licensed.
+- stack: Markdown skill
+- source post: https://news.ycombinator.com/item?id=50251342
+- note: Show HN, 26 Oct 2026.
+
+#### Flawless UI/UX
+- name: Flawless UI/UX
+- url: https://github.com/smokeeaasd/flawless-ui-ux
+- category: Agent design skills
+- what it is: Design skill plus a local CLI that inspects a running URL for contrast, names, text size, overflow, broken images, and runtime errors.
+- when to use it: After a page runs, as a check rather than as a component library.
+- directly usable for a web page: yes (Agent skill plus a local inspect CLI)
+- install / usage: npx flawless-ui-ux@latest install
+- license: MIT
+- stack: Markdown skill; local inspect CLI
+- source post: https://news.ycombinator.com/item?id=50381846
+- note: Show HN, 5 Nov 2026.
+
+#### oil-motion
+- name: oil-motion
+- url: https://github.com/oil-oil/oil-motion
+- category: Agent design skills
+- what it is: Skill for motion that follows scroll, pointer, drag, and device tilt. It prepares generated video, green-screen clips, and sprites into a controllable timeline. It is not a CSS transition kit.
+- when to use it: A product, character, or scene that should move with scroll or the pointer.
+- directly usable for a web page: yes (Agent skill (process/rules))
+- install / usage: npx skills add oil-oil/oil-motion
+- license: MIT
+- stack: Agent skill; video and sprite assets
+- source post: https://x.com/Y0urDumble/status/2119793194435027220
+- note: Ordinary button and layout motion should stay in CSS, Motion Primitives, or GSAP. This skill says so.
 
 ### UI kits, components & effects
 
@@ -164,6 +257,109 @@ Machine-readable copy: `agent-handoff-design-sources.json` (same data). Source: 
 - source post: https://x.com/RoundtableSpace/status/2110255627704455591
 - note: The post's link (github.com/akaieuan/trickle) returns 404. The live repo is akaieuan/trickle-UI-kit.
 
+#### AnimateIcons
+- name: AnimateIcons
+- url: https://animateicons.in
+- category: UI kits, components & effects
+- what it is: Animated icon set for React, Vue, Angular, and plain JS. The live page says 1,500 free open-source icons and shows a shadcn registry. The post that named it said 170.
+- when to use it: Icons that should move on hover, instead of a static set.
+- directly usable for a web page: yes (npm package and a shadcn registry)
+- install / usage: npm install @animateicons/react
+- license: The site says free and open source. A LICENSE file was not opened.
+- stack: React, Vue, Angular, or plain JS; shadcn registry
+- source post: https://x.com/csaba_kissi/status/2119791399176732731
+- note: A shadcn add is also on the homepage: npx shadcn@latest add @animateicons/lu-x
+
+#### PlopUI
+- name: PlopUI
+- url: https://plopui.com
+- category: UI kits, components & effects
+- what it is: Hand-drawn React kit: wobbly lines, crooked stickers, native elements, and WCAG AA. Each wobble is seeded so server and client match.
+- when to use it: A page that should not look like a default component grid.
+- directly usable for a web page: yes (shadcn registry or an npm package)
+- install / usage: npx shadcn add @plopui/button
+- license: MIT. The bundled Sketchpop font is SIL OFL 1.1.
+- stack: TypeScript, React, shadcn registry
+- source post: https://www.reddit.com/r/SideProject/comments/1xp8tli/i_built_a_handdrawn_react_ui_kit_as_a_side/
+- note: Posted on r/SideProject on 6 Nov 2026. npm i @plop-ui/react is the package form.
+
+#### Volt UI
+- name: Volt UI
+- url: https://github.com/Mahmoud-ctrl/volt-ui
+- category: UI kits, components & effects
+- what it is: React animation package: text motion, cursors, buttons, cards, loaders, and backgrounds. The README says there is no pro tier.
+- when to use it: A specific motion component with one npm import.
+- directly usable for a web page: yes (npm package)
+- install / usage: npm install @volt-ui/react
+- license: MIT
+- stack: React, Motion, GSAP, Three.js
+- source post: https://www.reddit.com/r/react/comments/1r6p0ap/100_react_animation_components_all_free/
+- note: Docs are at https://volt-ui-two.vercel.app/components
+
+#### GodUI
+- name: GodUI
+- url: https://godui.design
+- category: UI kits, components & effects
+- what it is: Animated shadcn components, plus a lab of more experimental pieces. Motion stays on transform, opacity, and filter. An MCP server can install them.
+- when to use it: You already use shadcn and want motion copied in as source.
+- directly usable for a web page: yes (shadcn registry and an MCP server)
+- install / usage: npx shadcn@latest add "https://godui.design/r/dialog.json"
+- license: MIT
+- stack: TypeScript, React, shadcn, MCP
+- source post: https://www.reddit.com/r/react/comments/1urrhru/i_built_an_opensource_collection_of_animated/
+
+#### React Bits
+- name: React Bits
+- url: https://reactbits.dev
+- category: UI kits, components & effects
+- what it is: Free animated React components: text, cursors, reveals, and shader backgrounds, each as JavaScript or TypeScript and CSS or Tailwind. Same author as Canvas UI.
+- when to use it: One free animated component from the public registry.
+- directly usable for a web page: yes (shadcn registry)
+- install / usage: npx shadcn@latest add @react-bits/SplitText-TS-TW
+- license: MIT plus Commons Clause. Free to use in a project. You cannot sell the library itself.
+- stack: React, shadcn registry
+- source post: https://www.reddit.com/r/BestGitHubRepos/comments/1xkwb4i/react_bits_animated_react_components_for_websites/
+- note: React Bits Pro is paid. Some pieces are adapted from Paper Shaders. Use the free registry.
+
+#### Shaders
+- name: Shaders
+- url: https://github.com/shader-effects-inc/shaders
+- category: UI kits, components & effects
+- what it is: WebGPU shader components for React, Vue, Svelte, Solid, and plain JS. Gradients, noise, glass, light, and cursor trails. This is Shader Effects Inc, not Paper Shaders.
+- when to use it: A shader component with a shared prop API, or an agent skill that knows this library.
+- directly usable for a web page: yes (npm package and an agent skill)
+- install / usage: npx shaders skill
+- license: MIT for the engine, the repo components, and the npm package. Pro presets are a paid subscription.
+- stack: TypeScript, WebGPU, npm package shaders
+- source post: https://www.reddit.com/r/reactjs/comments/1wzbnmw/shaders_is_now_open_source_with_200_webgpu/
+- note: Do not buy Shaders Pro without approval. Give WebGPU effects a static fallback.
+
+#### Fancy Components
+- name: Fancy Components
+- url: https://www.fancycomponents.dev
+- category: UI kits, components & effects
+- what it is: Copy-in React text motion: letter swap, scramble, typewriter, text on a path, and reveals. Built with Tailwind and Motion, shipped as a shadcn registry.
+- when to use it: A headline treatment that should be source in the repo, not a runtime you cannot read.
+- directly usable for a web page: yes (shadcn registry)
+- install / usage: npx shadcn add @fancy/component-name
+- license: MIT
+- stack: React, Tailwind, Motion, shadcn registry
+- source post: https://www.reddit.com/r/shadcn/comments/1ormdg2/top_free_shadcn_ui_block_and_component_libraries/
+- note: Add the @fancy registry URL to components.json first. Docs: https://www.fancycomponents.dev/docs/installation
+
+#### Liquid Glass
+- name: Liquid Glass
+- url: https://glass.samasante.com
+- category: UI kits, components & effects
+- what it is: Real refraction for the web, with no dependencies. The homepage says it works in Safari, Firefox, and Chrome.
+- when to use it: One glass surface, not a whole glass theme.
+- directly usable for a web page: yes (npm package)
+- install / usage: pnpm add @samasante/liquid-glass
+- license: MIT
+- stack: Zero-dependency package @samasante/liquid-glass
+- source post: https://x.com/askwhykartik/status/2110346921042657426
+- note: The homepage showed v0.1.0.
+
 ### Inspiration galleries
 
 #### Inspora
@@ -251,6 +447,110 @@ Machine-readable copy: `agent-handoff-design-sources.json` (same data). Source: 
 - stack: Website
 - source post: https://x.com/neropursue/status/2113878128061792423
 
+#### Sections
+- name: Sections
+- url: https://sections.wtf
+- category: Inspiration galleries
+- what it is: One section at a time from real products: menu, hero, features, pricing, CTA, testimonial, FAQ, footer, 404, and more.
+- when to use it: You are stuck on one region of a page and Footer or CTA Gallery is the wrong slice.
+- directly usable for a web page: no (Reference only)
+- install / usage: n/a
+- license: Viewing only
+- stack: Website
+- source post: https://www.indiehackers.com/post/the-best-design-directories-to-show-off-your-work-e7b0c99522
+- note: Named by Arian Adeli on Indie Hackers, 22 Dec 2025. The email list is optional.
+
+#### 404s
+- name: 404s
+- url: https://www.404s.design
+- category: Inspiration galleries
+- what it is: 404 pages only. Filters cover style and industry. Each card links to that site's real 404.
+- when to use it: Designing an error page.
+- directly usable for a web page: no (Reference only)
+- install / usage: n/a
+- license: Viewing only
+- stack: Website
+- source post: https://fountn.design/resource/404s-gallery-of-error-404-page-designs/
+- note: Free to browse. No Indie Hackers thread in the 9 Nov search named the domain.
+
+#### Navbar Gallery
+- name: Navbar Gallery
+- url: https://navbar.gallery
+- category: Inspiration galleries
+- what it is: Navigation bars from real sites: dropdown, mega menu, sidebar, search, announcement, and fullscreen. Built by the person behind Footer. The public grid numbers past 550.
+- when to use it: Designing the top navigation. The Iconly photo post of nav ideas has no links. This does.
+- directly usable for a web page: no (Reference only)
+- install / usage: n/a
+- license: Viewing only
+- stack: Website
+- source post: https://x.com/himanshubuildss/status/2118769896591106302
+- note: Free to browse. Sponsored by Mobbin. Subscribe is a newsletter, not a gate.
+
+#### Pricing Pages
+- name: Pricing Pages
+- url: https://pricingpages.design
+- category: Inspiration galleries
+- what it is: Pricing pages only, filtered by tier cards, comparison tables, monthly switch, and usage pricing.
+- when to use it: Designing a pricing section.
+- directly usable for a web page: no (Reference only)
+- install / usage: n/a
+- license: Viewing only
+- stack: Website
+- source post: https://pricingpages.design
+- note: The homepage is the gallery. The 9 Nov search did not find a Reddit or Indie Hackers thread that named it.
+
+#### Minimal Gallery
+- name: Minimal Gallery
+- url: https://minimal.gallery
+- category: Inspiration galleries
+- what it is: Curated minimal sites, tagged by portfolio, startup, one page, agency, and SaaS. Running since 2013. A weekly email is optional.
+- when to use it: A quieter landing-page reference than the louder galleries.
+- directly usable for a web page: no (Reference only)
+- install / usage: n/a
+- license: Viewing only
+- stack: Website
+- source post: https://x.com/YassineZaanouni/status/2119700637239894349
+- note: Also named by Arian Adeli on Indie Hackers, 7 Apr 2026, next to Land-book.
+
+#### recent.design
+- name: recent.design
+- url: https://recent.design
+- category: Inspiration galleries
+- what it is: Site gallery. godly.website now redirects here.
+- when to use it: Recent whole-site references.
+- directly usable for a web page: no (Reference only)
+- install / usage: n/a
+- license: Viewing only
+- stack: Website
+- source post: https://x.com/YassineZaanouni/status/2119700637239894349
+- note: The post linked godly.website. That host redirects to this one.
+
+#### Dead Simple Sites
+- name: Dead Simple Sites
+- url: https://deadsimplesites.com
+- category: Inspiration galleries
+- what it is: Sites chosen for being quiet: no animation and no scroll-jacking, per the gallery's own description.
+- when to use it: A reference for a page that should stay still.
+- directly usable for a web page: no (Reference only)
+- install / usage: n/a
+- license: Viewing only
+- stack: Website
+- source post: https://www.indiehackers.com/post/the-best-design-directories-to-show-off-your-work-e7b0c99522
+- note: Named by Arian Adeli on Indie Hackers, 22 Dec 2025.
+
+#### OG Image Gallery
+- name: OG Image Gallery
+- url: https://www.ogimage.gallery
+- category: Inspiration galleries
+- what it is: Hand-picked Open Graph images, filtered by category. Open Graph Examples is the larger sibling and lists the meta tags behind each image.
+- when to use it: Designing a social preview image.
+- directly usable for a web page: no (Reference only)
+- install / usage: n/a
+- license: Viewing only
+- stack: Website
+- source post: https://www.indiehackers.com/post/the-best-design-directories-to-show-off-your-work-e7b0c99522
+- note: The larger catalog is https://opengraphexamples.com
+
 ### Templates & premium sections
 
 #### Motion (motionin.design) ★ top pick
@@ -329,6 +629,83 @@ Machine-readable copy: `agent-handoff-design-sources.json` (same data). Source: 
 - stack: Image/video assets + web shader tool
 - source post: https://x.com/neropursue/status/2113878128061792423
 - note: StreetPi's Aurora palette uses a Grainient-style grain overlay.
+
+#### fffuel
+- name: fffuel
+- url: https://www.fffuel.co/gggrain/
+- category: Fonts, colors & backgrounds
+- what it is: Free in-browser SVG generators. gggrain makes grainy gradients, nnnoise makes noise, and uuunion makes mesh-like gradients.
+- when to use it: A grain or noise background while the grainy-gradients demo host is paused.
+- directly usable for a web page: yes (SVG export)
+- install / usage: Export from https://www.fffuel.co/gggrain/
+- license: Free SVG export for use on the web or in a design app. No SPDX license was stated on the generator page.
+- stack: Website; SVG export
+- source post: https://www.reddit.com/r/web_design/comments/1kjiq3n/where_does_one_find_or_generate_these_grainy/mro5xla/
+- note: Named on r/web_design, 11 May 2025, in a thread about grainy Webflow backgrounds.
+
+#### Haikei
+- name: Haikei
+- url: https://haikei.app
+- category: Fonts, colors & backgrounds
+- what it is: SVG background generators. The free tier is 15 generators, unlimited SVG downloads, and unlimited medium-resolution PNGs, with no signup.
+- when to use it: A blob, wave, or grid background exported as SVG.
+- directly usable for a web page: yes (SVG export on the free tier)
+- install / usage: Export from https://haikei.app on the free tier
+- license: Free tier stays free, including commercial and client work. You may not use the output to run a competing generator. Pro is marked coming soon.
+- stack: Website; SVG and PNG export
+- source post: https://www.reddit.com/r/SideProject/comments/18ydql9/i_launched_my_abandoned_side_project_and_recently/kgag57p/
+- note: Do not buy Pro without approval. Pricing page copyright 2026.
+
+#### Fontshare
+- name: Fontshare
+- url: https://www.fontshare.com
+- category: Fonts, colors & backgrounds
+- what it is: Free fonts from the Indian Type Foundry, including Satoshi and Clash Display. Those two are marked closed source on the catalog.
+- when to use it: A display or text face with a foundry behind it, when Google Fonts is too familiar.
+- directly usable for a web page: yes (Font files)
+- install / usage: Download a family from https://www.fontshare.com and follow that family's terms
+- license: Free for personal and commercial use. Do not modify or redistribute Satoshi or Clash Display. They are closed source.
+- stack: Font files
+- source post: https://www.reddit.com/r/typography/comments/12wwfdg/give_me_your_top_3_free_type_foundries_or_free/jhgyge6/
+- note: Named on r/typography, 24 Apr 2023.
+
+#### Realtime Colors
+- name: Realtime Colors
+- url: https://www.realtimecolors.com
+- category: Fonts, colors & backgrounds
+- what it is: Palette preview on a sample layout, so contrast and roles are visible before you copy the colors.
+- when to use it: Choosing a palette and checking it on type, surfaces, and buttons together.
+- directly usable for a web page: yes (Palette preview)
+- install / usage: Build the palette at https://www.realtimecolors.com and copy the CSS variables
+- license: The site says it is 100% free.
+- stack: Website
+- source post: https://x.com/YassineZaanouni/status/2119700637239894349
+
+#### oklch.com
+- name: oklch.com
+- url: https://oklch.com
+- category: Fonts, colors & backgrounds
+- what it is: OKLCH color picker and converter from Evil Martians. Hue, lightness, and chroma move independently. Source is the MIT picker at github.com/evilmartians/oklch-picker.
+- when to use it: Picking or converting a color in OKLCH instead of HSL.
+- directly usable for a web page: yes (Color picker)
+- install / usage: Use https://oklch.com or the source at https://github.com/evilmartians/oklch-picker
+- license: MIT
+- stack: Website; MIT source
+- source post: https://www.reddit.com/r/web_design/comments/1pvk7qz/oklch_obviously_not_a_thing_but_why/nvx2pe6/
+- note: Recommended on r/web_design, 25 Dec 2025.
+
+#### Mona Sans
+- name: Mona Sans
+- url: https://github.com/github/mona-sans
+- category: Fonts, colors & backgrounds
+- what it is: GitHub's variable grotesque. Axes are weight, width, and slant. Hubot Sans ships beside it.
+- when to use it: A variable sans with a license you can read, instead of a closed display face.
+- directly usable for a web page: yes (Font files)
+- install / usage: Use the OFL files from https://github.com/github/mona-sans
+- license: SIL Open Font License
+- stack: Variable font
+- source post: https://github.com/github/mona-sans
+- note: The project page says open source and free to use, licensed under the OFL.
 
 ### Creative & AI tools
 
