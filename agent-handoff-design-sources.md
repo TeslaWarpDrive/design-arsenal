@@ -11,12 +11,12 @@ Bradley saved these from X. Treat them as the **default source material** for th
 3. **Reference-only** items are galleries. Browse them for layout, footer, CTA, motion and icon ideas, then build your own version. Don't copy assets.
 4. **Start with the top picks (★).** For a web page, a strong default stack is: design-taste + ai-design-skills (direction and process) → better-design tokens or ui-layouts blocks (structure) → paper-shaders or canvas-ui (one hero effect) → motion-primitives / trickle-ui-kit (motion and text reveals) → land-book, footer.design, cta.gallery, 60fps, motionin.design (inspiration). Hallmark and the official GSAP skills, added 9 Nov 2026, are the new top picks when a page needs a harder taste check or scroll-driven motion.
 5. **Bradley's taste:** anything a person will look at should be striking and polished, never bland. Read `bradley-design-taste.md` in this folder first.
-6. **No purchases.** Several sources have paid tiers (motionin.design, Backgrounds Supply, Grainient Pro, Wonderlist, Hyperiux Pro). Use only free or open-source parts unless Bradley approves a purchase. The 9 Nov additions with a paid tier are Shaders Pro, React Bits Pro, and Haikei Pro (marked coming soon). Leave those tiers alone.
+6. **No purchases.** Several sources have paid tiers (motionin.design, Backgrounds Supply, Grainient Pro, Wonderlist, Hyperiux Pro). Use only free or open-source parts unless Bradley approves a purchase. Shaders Pro, React Bits Pro, and Haikei Pro (marked coming soon) are paid. Leave those tiers alone.
 7. Honor `prefers-reduced-motion` and keep text contrast at WCAG AA or better over shaders and gradients.
 
-Machine-readable copy: `agent-handoff-design-sources.json` (same data). Source: 34 bookmarks scanned on 25 Oct 2026, 27 resources kept from that scan. On 9 Nov 2026, 29 more were added after each page was checked. 56 resources are in this file.
+Machine-readable copy: `agent-handoff-design-sources.json` (same data). Source: bookmarks from 25 Oct 2026, plus more added 9 Nov 2026. 56 resources are in this file.
 
-8. **Left out of the 9 Nov 2026 pass on purpose.** Coolors, Inter, and the broad directories (SiteInspire, One Page Love, Saaspo, WebInspoo, Landingfolio, Httpster). Scrolltide and the main Refero library, because most of each is paid. SaaS Interface ($39 once), SaaSFrame, and Page Flows. Shader Gradient, because the homepage sells a Framer plugin and the repo had no root LICENSE file. Anthropic's frontend-design skill and Emil Kowalski's skills, because Design Taste, Motion Primitives, and the new GSAP skills already cover that job.
+8. **Left out on purpose.** Coolors, Inter, and the broad directories (SiteInspire, One Page Love, Saaspo, WebInspoo, Landingfolio, Httpster). Scrolltide and the main Refero library, because most of each is paid. SaaS Interface ($39 once), SaaSFrame, and Page Flows. Shader Gradient, because the homepage sells a Framer plugin and the repo had no root LICENSE file. Anthropic's frontend-design skill and Emil Kowalski's skills, because Design Taste, Motion Primitives, and the new GSAP skills already cover that job.
 
 ## Sources
 
@@ -217,7 +217,7 @@ Machine-readable copy: `agent-handoff-design-sources.json` (same data). Source: 
 - license: Repo MIT; GitHub description says the free effects are MPL 2.0; Pro effects are paid
 - stack: TypeScript, Next.js
 - source post: https://x.com/RoundtableSpace/status/2110255627704455591
-- note: The post's link (github.com/Hyperiux-Immersive/Hyperiux) returns 404. This is the live repo found by search; it's very likely the same project.
+- note: The post's link (github.com/Hyperiux-Immersive/Hyperiux) returns 404. This is the live repo, and it looks like the same project.
 
 #### Motion Primitives ★ top pick
 - name: Motion Primitives
@@ -471,7 +471,7 @@ Machine-readable copy: `agent-handoff-design-sources.json` (same data). Source: 
 - license: Viewing only
 - stack: Website
 - source post: https://fountn.design/resource/404s-gallery-of-error-404-page-designs/
-- note: Free to browse. No Indie Hackers thread in the 9 Nov search named the domain.
+- note: Free to browse.
 
 #### Navbar Gallery
 - name: Navbar Gallery
@@ -497,7 +497,7 @@ Machine-readable copy: `agent-handoff-design-sources.json` (same data). Source: 
 - license: Viewing only
 - stack: Website
 - source post: https://pricingpages.design
-- note: The homepage is the gallery. The 9 Nov search did not find a Reddit or Indie Hackers thread that named it.
+- note: The homepage is the gallery.
 
 #### Minimal Gallery
 - name: Minimal Gallery
