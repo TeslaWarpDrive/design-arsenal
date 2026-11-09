@@ -1,6 +1,6 @@
 # Design Arsenal
 
-56 design tools, UI kits, component libraries, and inspiration sources, in one searchable page with the Aurora theme. The first 27 came from X bookmarks. The rest were checked on 9 Nov 2026.
+56 design tools, UI kits, component libraries, and inspiration sources, in one searchable page with the Aurora theme. The first 27 came from X bookmarks. The rest were added 9 Nov 2026.
 
 **Live page:** https://teslawarpdrive.github.io/design-arsenal/
 
